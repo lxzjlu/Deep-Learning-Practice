@@ -62,7 +62,6 @@ class VAE(nn.Module):
 if __name__ == '__main__':
     nz=100
     device='cpu'
-    print("=====> 构建VAE")
     vae = VAE()
     vae.load_state_dict(torch.load('./result_train_20230727/CVAE-GAN-VAE.pth'))
     outputs = []
